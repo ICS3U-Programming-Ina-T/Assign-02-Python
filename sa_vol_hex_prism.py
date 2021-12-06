@@ -11,14 +11,14 @@ from colorama import Fore
 
 
 def main():
-    # input
+    # get input
 
     print("Today we will calculate the surface area and")
     print("volume of a hexagonal prism!")
     print("")
     units = str(input("Enter the units: "))
-    base_edge = int(input("Enter the base edge: "))
-    height = int(input("Enter the height: "))
+    base_edge = float(input("Enter the base edge: "))
+    height = float(input("Enter the height: "))
 
     # calculation process for surface area
 
@@ -36,7 +36,7 @@ def main():
     volume2 = volume1 * height
     volume3 = volume * volume2
 
-    # output
+    # output display
     print("")
     print(Fore.RED + "Surface area = {:,.2f}{}^2 ". format(sA5, units))
     print(Fore.GREEN + "Volume = {:,.2f}{}^3". format(volume3, units))
